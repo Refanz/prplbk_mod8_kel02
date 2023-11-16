@@ -2,7 +2,7 @@
 
     Private objConv As New TempConv.TempConvComp
 
-    Private Sub rbCToR_CheckedChanged(sender As Object, e As EventArgs) Handles rbCToR.CheckedChanged
+    Private Sub rbCToK_CheckedChanged(sender As Object, e As EventArgs) Handles rbCToK.CheckedChanged
         Dim c As Double
         Dim temp As String
 
@@ -14,8 +14,7 @@
             c = CDbl(valTemp.Text)
         End If
 
-        valResult.Text = "Konversi Celcius Ke Reamur" & vbNewLine & vbNewLine & "Celcius: " & temp & vbNewLine & "Reamur: " & objConv.cToR(c)
-
+        valResult.Text = "Konversi Celcius Ke Kelvin" & vbNewLine & vbNewLine & "Celcius: " & temp & vbNewLine & "Kelvin: " & objConv.cToK(c)
     End Sub
 
     Private Sub rbCToF_CheckedChanged(sender As Object, e As EventArgs) Handles rbCToF.CheckedChanged
@@ -33,7 +32,7 @@
         valResult.Text = "Konversi Celcius Ke Fahrenheit" & vbNewLine & vbNewLine & "Celcius: " & temp & vbNewLine & "Fahrenheit: " & objConv.cToF(c)
     End Sub
 
-    Private Sub rbCToK_CheckedChanged(sender As Object, e As EventArgs) Handles rbCToK.CheckedChanged
+    Private Sub rbCToR_CheckedChanged(sender As Object, e As EventArgs) Handles rbCToR.CheckedChanged
         Dim c As Double
         Dim temp As String
 
@@ -45,8 +44,10 @@
             c = CDbl(valTemp.Text)
         End If
 
-        valResult.Text = "Konversi Celcius Ke Kelvin" & vbNewLine & vbNewLine & "Celcius: " & temp & vbNewLine & "Kelvin: " & objConv.cToK(c)
+        valResult.Text = "Konversi Celcius Ke Reamur" & vbNewLine & vbNewLine & "Celcius: " & temp & vbNewLine & "Reamur: " & objConv.cToR(c)
+
     End Sub
+
     Private Sub rbRToC_CheckedChanged(sender As Object, e As EventArgs) Handles rbRToC.CheckedChanged
         Dim r As Double
         Dim temp As String
